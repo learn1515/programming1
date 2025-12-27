@@ -1,0 +1,118 @@
+
+
+
+body{
+  background:#000000e5;
+  margin:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  text-decoration: none;
+}
+
+.container{
+  width:350px;
+}
+
+ .container {background-color: #242424c7;}
+
+.box img{background-color: #242424c7;
+height: 178px;}
+
+       .container .box{
+    background:#242424c7;
+
+  border:1px solid #1615156e;
+  padding:40px;
+  text-align:center;
+}
+
+.container .box form{background: #242424c7;}
+
+.logo{
+  font-family: 'Segoe Script', cursive;
+  font-size:42px;
+  margin-bottom:30px;
+}
+
+input{
+  width:100%;
+  padding:10px;
+  margin-bottom:8px;
+  border:1px solid #dbdbdb;
+  background:#242424c7;
+  border-radius:3px;
+}
+.box a{background: #242424c7;}
+button{
+  width:100%;
+  padding:10px;
+  background:#0095f6;
+  border:none;
+  color:#fff;
+  font-weight:bold;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.divider{
+    background: #242424c7;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin:20px 0;
+}
+
+.divider span{
+  flex:1;
+  height:1px;
+  background:#242424c7;
+}
+
+.box .p{background: #242424c7;
+    justify-content: center;
+display: flex;
+
+}
+.box a{color: #0095f6;}
+
+.divider p{
+  margin:0 10px;
+  font-size:12px;
+  font-weight:bold;
+  color:#242424c7
+}
+
+.fb{
+  color:#0095f6;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+
+.signup{background: #242424c7;}
+
+.forgot{
+  font-size:12px;
+  color:#0095f6;
+}
+
+.admin-container{
+  background:#fff;
+  border:1px solid #dbdbdb;
+  padding:40px;
+  width:350px;
+  text-align:center;
+}
+
+.card{
+  background:#fafafa;
+  padding:20px;
+  margin:20px 0;
+  border-radius:10px;
+}
+
+.logout{
+  background:#ff4d4d;
+}

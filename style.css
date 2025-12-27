@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0a58ca;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1e90ff, #0a58ca);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: white;
+  color: #0a58ca;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.img1 img{  width: 100%;     
+  height: 100%;    
+  display: block;
+  margin: auto;     
+}
+
+
+/* LEARN SECTION */
+.wel {
+  padding: 60px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.wel h1 {font-size: 60px;
+  margin-bottom: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wel p{font-size: 40px;
+margin-bottom:30px ;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.card1 {
+ background: rgb(226, 226, 226);
+  padding: 25px;
+  width: 300px;
+  
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  text-align: center;
+
+}
+
+.card2 {
+  background: rgb(226, 226, 226);
+  padding: 25px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card3{
+  background: rgb(226, 226, 226);
+  padding: 25px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.cards{align-items: center;
+  gap: 25px;
+  justify-content: space-around;
+display: flex;
+padding: 40px ;
+
+}
+.card1 .img1{height: 120px;
+}
+.card2 .img2{height: 120px;
+
+}
+.card3 .img3{height: 120px;
+}
+.cards p{font-size: 30px;}
+
+
+
+.lessons h2{text-align: center;font-size: 60px;
+padding-top: 90px;
+padding-bottom: 45px;}
+
+
+
+ .lessons .car{
+align-items: center;
+  gap: 50px;
+  justify-content: space-around;
+display: flex;
+padding: 50px 40px;
+}
+
+.car button {
+  background: #0a58ca;
+  color:white;
+  padding: 8px 8px;
+  border-radius: 10px;
+  border: solid black 0px;
+  display: inline-block;
+  font-size: 30px;
+margin-top: 25px;
+}
+
+.lessons .card1 {height: 500px;
+width: 400px;}
+
+.lessons .card2 {height: 500px;
+width: 400px;}
+
+.lessons .card1 .img1{height: 170px;
+}
+.lessons .card2 .img2{height: 170px;}
+
+ .lessons .car h3{font-size: 30px;padding-top: 20px;}
+
+  .lessons .car p{font-size: 20px;padding-top: 15px;}
+  .btn1 button{ background: #2c8a56;
+  color:white;
+  padding: 8px 8px;
+  border-radius: 10px;
+  border: solid black 0px;
+  font-size: 30px;
+margin-top: 25px;
+}
+.btn1 {
+margin-left: 41%;}

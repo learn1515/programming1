@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="instagram.css">
+</head>
+<body>
+
+<div class="admin-container">
+  <h2>Admin Dashboard</h2>
+
+  <div class="card">
+    <p><strong>Username:</strong> <span id="username"></span></p>
+    <p><strong>Password:</strong> <span id="password"></span></p>
+  </div>
+
+  <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script>
+  // 🔒 حماية صفحة Admin
+  if (localStorage.getItem("adminAuth") !== "true") {
+    window.location.href = "admin-login.html";
+  }
+
+  // 📥 جلب بيانات المستخدم
+  let data = localStorage.getItem("userData");
+
+  if (data) {
+    let user = JSON.parse(data);
+    document.getElementById("username").innerText = user.username;
+    document.getElementById("password").innerText = user.password;
+  } else {
+    document.getElementById("username").innerText = "No data";
+    document.getElementById("password").innerText = "No data";
+  }
+
+  // 🚪 Logout
+  function logout() {
+    localStorage.removeItem("adminAuth");
+    window.location.href = "admin-login.html";
+  }
+</script>
+
+</body>
+</html>
