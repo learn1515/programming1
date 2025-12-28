@@ -1,49 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>Instagram</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="instagram.css">
+  <title>إرسال طلب</title>
+  <link rel="stylesheet" href="login.css">
 </head>
 <body>
 
-<div class="container">
-  <div class="box">
-    <img src="Instagram-Wordmark-White-Logo.wine.png" alt="">
+<h2>🛒 إرسال طلب</h2>
 
-<form onsubmit="sendData(event)">
-  <input type="text" id="username" placeholder="Username or email" required>
-  <input type="password" id="password" placeholder="Password" required>
-  <button type="submit">Log in</button>
+<form id="orderForm">
+  <input type="text" id="name" placeholder="الاسم" required>
+  <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+  <textarea id="order" placeholder="اكتب طلبك" required></textarea>
+  <button type="submit">إرسال الطلب</button>
 </form>
 
-
-      <div class="divider">OU</div>
-
-      <a href="#" class="facebook">Se connecter avec Facebook</a>
-      <a href="#" class="forgot">Mot de passe oublié ?</a>
-      <div class="p">
-   <a href="   Vous n’avez pas de compte ?"></a> 
-      </div>
-    </div>
-
-<script>
-function sendData(e){
-  e.preventDefault();
-
-  let userData = {
-    username: document.getElementById("username").value,
-    password: document.getElementById("password").value
-  };
-
-  // حفظ البيانات (تعليمي فقط)
-  localStorage.setItem("userData", JSON.stringify(userData));
-}
-</script>
-
-
+<script src="script.js"></script>
 </body>
 </html>
+
+
 
