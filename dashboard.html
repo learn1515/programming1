@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة التحكم</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>📦 كل الطلبات</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>الاسم</th>
+      <th>الهاتف</th>
+      <th>الطلب</th>
+    </tr>
+  </thead>
+  <tbody id="ordersTable"></tbody>
+</table>
+
+<script>
+let orders = JSON.parse(localStorage.getItem("orders")) || [];
+let table = document.getElementById("ordersTable");
+
+orders.forEach(o => {
+  table.innerHTML += `
+    <tr>
+      <td>${o.name}</td>
+      <td>${o.phone}</td>
+      <td>${o.order}</td>
+    </tr>
+  `;
+});
+</script>
+
+</body>
+</html>
